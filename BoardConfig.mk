@@ -28,11 +28,12 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/sony/yuga/bluetooth
 TARGET_KERNEL_CONFIG := fusion3_yuga_defconfig
 
 # Optimizations
-CLANG_O3 := true
+CLANG_O3 := false
 STRICT_ALIASING := false
-KRAIT_TUNINGS := true
+KRAIT_TUNINGS := false
 GRAPHITE_OPTS := false
-ENABLE_GCCONLY := true
+ENABLE_GCCONLY := false
+# USE_PIPE := true
 
 # Healthd
 BACKLIGHT_PATH := /sys/devices/i2c-0/0-0036/leds/lm3533-lcd-bl/brightness

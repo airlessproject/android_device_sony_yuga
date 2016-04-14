@@ -1,1 +1,1 @@
-add_lunch_combo tesla_yuga-userdebug
+add_lunch_combo validus_yuga-userdebug
