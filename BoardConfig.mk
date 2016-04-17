@@ -28,11 +28,12 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/sony/yuga/bluetooth
 TARGET_KERNEL_CONFIG := fusion3_yuga_defconfig
 
 # Optimizations
-CLANG_O3 := false
+CLANG_O3 := true
 STRICT_ALIASING := false
-KRAIT_TUNINGS := false
-GRAPHITE_OPTS := false
-ENABLE_GCCONLY := false
+KRAIT_TUNINGS := true
+GRAPHITE_OPTS := true
+ENABLE_GCCONLY := true
+ENABLE_SANITIZE := true
 # USE_PIPE := true
 
 # Healthd
