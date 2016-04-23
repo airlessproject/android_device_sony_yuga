@@ -30,4 +30,4 @@ on boot
 
     # Camera/Libals
     chown media input /dev/input/event11
-    chown media input /dev/input/event10
+    chown media input /dev/input/event12
