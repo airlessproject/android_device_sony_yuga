@@ -61,6 +61,16 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/system/usr/idc/clearpad.idc:system/usr/idc/clearpad.idc
 
+# Sony
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.build.product=C6603
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.product.device=C6603
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.com.google.clientidbase=android-sonyericsson
+
 # call dalvik heap config
 $(call inherit-product, frameworks/native/build/phone-xxhdpi-2048-dalvik-heap.mk)
 

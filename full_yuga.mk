@@ -33,7 +33,7 @@ $(call inherit-product, device/sony/yuga/yuga.mk)
 
 # Set those variables here to overwrite the inherited values.
 PRODUCT_NAME := full_yuga
-PRODUCT_DEVICE := yuga
+PRODUCT_DEVICE := C6603
 PRODUCT_BRAND := Sony
 PRODUCT_MANUFACTURER := Sony
-PRODUCT_MODEL := Xperia Z
+PRODUCT_MODEL := C6603
