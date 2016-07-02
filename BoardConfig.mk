@@ -31,10 +31,8 @@ TARGET_KERNEL_CONFIG := fusion3_yuga_defconfig
 CLANG_O3 := true
 STRICT_ALIASING := true
 KRAIT_TUNINGS := true
-GRAPHITE_OPTS := true
+GRAPHITE_OPTS := false
 ENABLE_GCCONLY := true
-ENABLE_SANITIZE := true
-USE_PIPE := true
 
 # Healthd
 BACKLIGHT_PATH := /sys/devices/i2c-0/0-0036/leds/lm3533-lcd-bl/brightness
