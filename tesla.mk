@@ -10,7 +10,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=C6603 BUILD_FINGERPRINT=Sony/C6603/
 
 PRODUCT_NAME := tesla_yuga
 PRODUCT_DEVICE := yuga
-
-# Official Tesla
-TESLA_BUILD_TYPE := Official
-TESLA_POSTFIX := -$(shell date +"%Y%m%d-%H%M")
