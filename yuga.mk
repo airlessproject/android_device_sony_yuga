@@ -24,12 +24,15 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.proximity.xml:system/etc/permissions/android.hardware.sensor.proximity.xml \
     frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
 
-# This device is xhdpi.  However the platform doesn't
-# currently contain all of the bitmaps at xhdpi density so
-# we do this little trick to fall back to the hdpi version
-# if the xhdpi doesn't exist.
-PRODUCT_AAPT_CONFIG := normal
+# Set the physical display size with PRODUCT_AAPT_CONFIG
+# Options are small(~2"-3"), normal(~3"-4"), large(~4"-7"), xlarge(~7" and larger)
+PRODUCT_AAPT_CONFIG := large
+# Set the preferred asset density with PRODUCT_AAPT_PREF_CONFIG
+# See android CCD for valid options
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
+# A list of dpis to select prebuilt apk, in precedence order.
+# See android CCD for valid options
+PRODUCT_AAPT_PREBUILT_DPI := xxhdpi 420dpi 400dpi 360dpi xhdpi 280dpi hdpi tvdpi mdpi ldpi
 
 # HW Settings
 PRODUCT_COPY_FILES += \
